@@ -5,26 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail-Clone</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="gmail-container">
         <div class="sidebar" >
-        <div>
+        
         <ul>
-            <h2 class="gmail">Gmail</h2>
+            <a href="index.html"><img src="logo.png" alt=""></a>
+            
             <div class="logo">Compose</div>
-            <li><a class="active" href="#">Inbox</a></li>
+            <li><a class="active" href="index.html">Inbox</a></li>
             <li><a href="#">Starred</a></li>
             <li><a href="#">Snoozed</a></li>
             <li><a href="#">Sent</a></li>
             <li><a href="#">Drafts</a></li>
-            <li ><a href="#">More</a>
+
+                <div class="dropdown">
+                <li ><a href="#" onclick="hideshow()" >More</a></li>
+                    <div class="content" id="main">
+                    <li><a href="#">Important</a></li>
+                    <li><a href="#">Chats</a></li>
+                    <li><a href="#">Scheduled</a></li>
+                    <li><a href="#">All Mail</a></li>
+                    <li><a href="#">Spam</a></li>
+                    <li><a href="#">Bin</a></li>
+
+                        <div class="dropdown1">
+                        <li><a href="#">Categories</a></li>
+                            <div class="content1" >
+                            <li><a href="#">Social</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li><a href="#">Promotions</a></li>
+                            </div>
+                        </div>
+                    <li><a href="#">Manage labels</a></li>
+                    <li><a href="#">Create new label</a></li>
+                    </div>
               
-            </li>
+                </div>
             <br>
             <p style="padding-left: 30px;">Labels</p>
         </ul>
-        </div>
+        
         </div>
         <div class="main-area">
             <div class="header"></div>
