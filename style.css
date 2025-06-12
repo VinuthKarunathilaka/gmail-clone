@@ -103,7 +103,7 @@ img{
 #list:hover{
   background-color: #ededed;
 }
-#icon{
+.icon{
   position: fixed;
   margin-left: -35px;  
   font-size: 15px;
